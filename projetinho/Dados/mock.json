@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "descricao": "Labubu Original",
+        "imagem": "",
+        "preco": 20.0
+    },
+    {
+        "id": 2,
+        "descricao": "Labubu Mocarom",
+        "imagem": "",
+        "preco": 10.0
+    },
+    {
+        "id": 3,
+        "descricao": "Labubu Energy Secret",
+        "imagem": "",
+        "preco": 40.0
+    },
+    {
+        "id": 4,
+        "descricao": "Labubu Zimomo",
+        "imagem": "",
+        "preco": 30.0
+    }
+]
