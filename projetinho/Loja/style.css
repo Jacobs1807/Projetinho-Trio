@@ -32,6 +32,7 @@ h1, h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 .p{
@@ -55,3 +56,12 @@ h1, h2{
     cursor: pointer;
     transform: rotate(360deg) scale(1.2);
 }   
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
