@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const imagem = document.createElement('img')
                 imagem.src = produtos.imagem
                 imagem.className = 'card-img-top'
+                imagem.style.height = 'card-img-top'
+                imagem.style.width = 'fit-content'
+                imagem.style.alignSelf = 'center'
 
                 const cardBody = document.createElement('div')
                 cardBody.className = 'card-body'
@@ -67,4 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
         }).catch((error) => console.error('Erro ao carregar dados', error))
+           
+        $('#produtos-container').on('click','.btn-adicionar-ao-carrinho', function(){
+            const indexDoProduto = $(this).data('indice')
+            const produtosSelecionado = produtos[indexDoProduto]
+
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || []
+            carrinho.push(produtosSelecionado)
+            localStorage.setItem('carrinho', JSON.stringify(carrinho))
+            alert('Produto adicionado com sucesso')
+        })
 })
