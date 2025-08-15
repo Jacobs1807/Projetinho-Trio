@@ -46,8 +46,10 @@ body{
     transform: translate(-50%, -50%);
 }
 .round .logo{
-    font-size: 56px;
+    width: 160px;
+    height: 160px;
     color: #ffffff;
+    margin-left: 1,5px;
 }
 .wrap-input-label{
     display: flex;
